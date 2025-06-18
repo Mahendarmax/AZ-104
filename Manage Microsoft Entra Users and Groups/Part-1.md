@@ -12,7 +12,7 @@
   - Self-service password reset (SSPR)
   - Identity protection
   - [Conditional Access](./Aditional_info/Conditional_Access.md)
-  - Application Proxy
+  - [Application Proxy](./Aditional_info/Application_Proxy.md)
 
 ---
 
