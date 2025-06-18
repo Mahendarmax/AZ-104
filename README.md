@@ -1,6 +1,11 @@
 # AZ-104
 # AZ-104 Certification Study Guide
 
+
+![image](https://github.com/user-attachments/assets/9cd6ffc3-a15c-45e7-9e45-f621df32c06b)
+
+# AZ-104 Certification Study Guide
+
 This guide covers the major topics and skills measured in the **AZ-104: Microsoft Azure Administrator** certification exam.
 
 ---
@@ -123,5 +128,3 @@ This guide covers the major topics and skills measured in the **AZ-104: Microsof
 - Configure Azure Site Recovery
 - Perform failover to secondary region
 - Configure and interpret backup reports and alerts
-
-![image](https://github.com/user-attachments/assets/9cd6ffc3-a15c-45e7-9e45-f621df32c06b)
