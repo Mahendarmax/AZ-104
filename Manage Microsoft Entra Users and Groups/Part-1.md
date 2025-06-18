@@ -11,7 +11,7 @@
   - Multi-factor authentication (MFA)
   - Self-service password reset (SSPR)
   - Identity protection
-  - Conditional Access  [Link Text](Manage Microsoft Entra Users and Groups/Aditional_info/Conditional_Access.md)
+  - [Conditional Access](./Manage%20Microsoft%20Entra%20Users%20and%20Groups/Aditional_info/Conditional_Access.md)
   - Application Proxy
 
 ---
