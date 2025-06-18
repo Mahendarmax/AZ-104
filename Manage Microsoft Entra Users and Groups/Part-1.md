@@ -122,6 +122,7 @@ This document highlights the key differences between **Active Directory (AD)** a
 
 📘 **Note**: Microsoft Entra ID is not a replacement for AD DS in traditional environments but complements it for modern cloud-first identity and access management.
 
+---
 
 # 📘 Microsoft Entra ID as a Directory Service for Cloud Apps
 
