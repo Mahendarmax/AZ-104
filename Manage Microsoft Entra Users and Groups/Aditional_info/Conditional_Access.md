@@ -38,8 +38,74 @@ Microsoft Entra Conditional Access lets you enforce security policies based on s
 - **Cloud Apps/Actions** – What apps or operations are being accessed
 - **Conditions** – Criteria like:
   - Sign-in risk
+
+***Sign-in Risk** in Microsoft Entra ID represents the **probability that a given sign-in attempt might be malicious**.
+
+It is calculated by Microsoft using AI and machine learning, analyzing **user behavior, location, device, and login patterns**.
+
+---
+
+### 📊 Risk Levels
+
+| Risk Level   | Description                                                                 |
+|--------------|-----------------------------------------------------------------------------|
+| **Low**      | Sign-in is unlikely to be malicious                                         |
+| **Medium**   | Sign-in shows some suspicious behavior                                      |
+| **High**     | Sign-in is very likely to be malicious (e.g., impossible travel, leaked creds) |
+| **No risk detected** | Microsoft Entra ID detects no issues with the sign-in              |
+
+---
+
+### 🧠 How Microsoft Detects Risk
+
+Microsoft detects risky sign-ins using:
+- **Impossible travel** (e.g., same user signs in from India and US within 5 minutes)
+- **Atypical travel**
+- **Malware-linked IP addresses**
+- **Sign-ins from anonymous IPs or Tor**
+- **Leaked credentials**
+
+---
+
+### 🛡️ Use Cases in Conditional Access
+
+You can configure Conditional Access to:
+- **Block high-risk sign-ins**
+- **Require MFA** for medium or high-risk logins
+- **Allow only low/no-risk sign-ins**
+- **Redirect high-risk users to secure password reset**
+
+---
+
+### 🧪 How to Use in a Policy
+
+In a Conditional Access policy:
+
+> Go to **Conditions → Sign-in Risk**, and choose which risk level(s) will trigger the policy.
+
+You must have **Microsoft Entra ID Premium P2** license to use Sign-in Risk in Conditional Access.
+
+---
+
+### 🏷️ License Requirement
+
+| Feature             | Required License            |
+|---------------------|-----------------------------|
+| **Sign-in Risk Policy** | Microsoft Entra ID Premium **P2** |
+
   - Location
   - Device platform
+
+| Platform    | Description                                  |
+| ----------- | -------------------------------------------- |
+| **Windows** | Devices running Windows 10/11, Server, etc.  |
+| **macOS**   | Apple desktop and laptop devices             |
+| **iOS**     | iPhones and iPads                            |
+| **Android** | Phones and tablets using the Android OS      |
+| **Linux**   | Devices running Linux (Ubuntu, Debian, etc.) |
+| **Unknown** | Devices where the OS can’t be determined     |
+
+
   - Client app type
 
 | Client App Type                     | Description                                                           |
