@@ -1,6 +1,7 @@
 # 🔐 Conditional Access in Microsoft Entra ID (Azure AD)
 
-Microsoft Entra Conditional Access lets you enforce security policies based on specific conditions. It helps balance security and user productivity by applying the right access controls at the right time.
+Microsoft Entra Conditional Access lets you enforce security policies based on specific conditions.  
+It helps balance security and user productivity by applying the right access controls at the right time.
 
 ---
 
@@ -25,57 +26,51 @@ Microsoft Entra Conditional Access lets you enforce security policies based on s
 
 ## 🏷️ Licensing Requirement
 
-- Conditional Access is a **Premium feature**
-  - Requires **Microsoft Entra ID P1 or P2 license**
-  - Formerly known as Azure AD Premium P1/P2
+Conditional Access is a **Premium feature**:
+
+- Requires **Microsoft Entra ID P1 or P2 license**
+- Formerly known as Azure AD Premium P1/P2
 
 ---
 
 ## 🧪 Policy Components
 
 ### 🎯 Assignments
-- **Users/Groups** – Who the policy applies to
-- **Cloud Apps/Actions** – What apps or operations are being accessed
+
+- **Users/Groups** – Who the policy applies to  
+- **Cloud Apps/Actions** – What apps or operations are being accessed  
 - **Conditions** – Criteria like:
-  - ## Sign-in risk
-
-****Sign-in Risk** in Microsoft Entra ID represents the **probability that a given sign-in attempt might be malicious***.
-
-It is calculated by Microsoft using AI and machine learning, analyzing **user behavior, location, device, and login patterns**.
 
 ---
+
+### 🔍 Sign-in Risk
+
+**Sign-in Risk** in Microsoft Entra ID represents the **probability that a given sign-in attempt might be malicious**.  
+It is calculated using AI and machine learning to analyze user behavior, location, device, and login patterns.
 
 #### 📊 Risk Levels
 
-| Risk Level   | Description                                                                 |
-|--------------|-----------------------------------------------------------------------------|
-| **Low**      | Sign-in is unlikely to be malicious                                         |
-| **Medium**   | Sign-in shows some suspicious behavior                                      |
-| **High**     | Sign-in is very likely to be malicious (e.g., impossible travel, leaked creds) |
-| **No risk detected** | Microsoft Entra ID detects no issues with the sign-in              |
-
----
+| Risk Level           | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| **Low**              | Sign-in is unlikely to be malicious                                         |
+| **Medium**           | Sign-in shows some suspicious behavior                                      |
+| **High**             | Sign-in is very likely to be malicious (e.g., impossible travel, leaked creds) |
+| **No risk detected** | Microsoft Entra ID detects no issues with the sign-in                       |
 
 #### 🧠 How Microsoft Detects Risk
 
-Microsoft detects risky sign-ins using:
-- **Impossible travel** (e.g., same user signs in from India and US within 5 minutes)
-- **Atypical travel**
-- **Malware-linked IP addresses**
-- **Sign-ins from anonymous IPs or Tor**
+- **Impossible travel** (e.g., same user signs in from India and US within 5 minutes)  
+- **Atypical travel**  
+- **Malware-linked IP addresses**  
+- **Sign-ins from anonymous IPs or Tor**  
 - **Leaked credentials**
-
----
 
 #### 🛡️ Use Cases in Conditional Access
 
-You can configure Conditional Access to:
-- **Block high-risk sign-ins**
-- **Require MFA** for medium or high-risk logins
-- **Allow only low/no-risk sign-ins**
-- **Redirect high-risk users to secure password reset**
-
----
+- Block high-risk sign-ins  
+- Require MFA for medium or high-risk logins  
+- Allow only low/no-risk sign-ins  
+- Redirect high-risk users to secure password reset
 
 #### 🧪 How to Use in a Policy
 
@@ -83,21 +78,28 @@ In a Conditional Access policy:
 
 > Go to **Conditions → Sign-in Risk**, and choose which risk level(s) will trigger the policy.
 
-You must have **Microsoft Entra ID Premium P2** license to use Sign-in Risk in Conditional Access.
-
----
+> ⚠️ Requires **Microsoft Entra ID Premium P2** license.
 
 #### 🏷️ License Requirement
 
-| Feature             | Required License            |
-|---------------------|-----------------------------|
-| **Sign-in Risk Policy** | Microsoft Entra ID Premium **P2** |
+| Feature               | Required License                      |
+|-----------------------|---------------------------------------|
+| **Sign-in Risk Policy** | Microsoft Entra ID Premium **P2**   |
 
-  - ## Location
-  - ## Device platform
+---
+
+### 🌍 Location Condition
+
+Use **Named Locations** (e.g., trusted IP ranges or countries) to limit access.
+
+---
+
+### 💻 Device Platform Condition
+
+Specify the device platforms that policies apply to:
 
 | Platform    | Description                                  |
-| ----------- | -------------------------------------------- |
+|-------------|----------------------------------------------|
 | **Windows** | Devices running Windows 10/11, Server, etc.  |
 | **macOS**   | Apple desktop and laptop devices             |
 | **iOS**     | iPhones and iPads                            |
@@ -105,31 +107,42 @@ You must have **Microsoft Entra ID Premium P2** license to use Sign-in Risk in C
 | **Linux**   | Devices running Linux (Ubuntu, Debian, etc.) |
 | **Unknown** | Devices where the OS can’t be determined     |
 
+---
 
-  - ## Client app type
+### 📱 Client App Type
+
+Control access by application type:
 
 | Client App Type                     | Description                                                           |
-| ----------------------------------- | --------------------------------------------------------------------- |
+|------------------------------------|-----------------------------------------------------------------------|
 | **Browser**                         | Web browsers (e.g., Edge, Chrome, Firefox)                            |
 | **Mobile Apps and Desktop Clients** | Apps like Outlook, Teams, OneDrive (supporting modern auth)           |
 | **Legacy Authentication Clients**   | Older apps using basic auth (POP, IMAP, SMTP, Office 2010)            |
 | **Other Clients**                   | Includes apps using modern protocols like PowerShell, Azure CLI, etc. |
 
+---
 
-#### ✅ Access Controls
+### ✅ Access Controls
+
+Decide whether to:
+
 - **Grant or Block Access**
-- **Require One or More of the Following**:
+- Require one or more of the following:
   - Multi-Factor Authentication (MFA)
   - Compliant device
   - Hybrid Azure AD joined device
   - Approved client app
   - Terms of use acceptance
 
-#### ⏱️ Session Controls (Optional)
-- Control user session behavior after sign-in, such as:
-  - Restricting download or upload
-  - Enforcing sign-out after a certain time
-  - Limited access on unmanaged devices
+---
+
+### ⏱️ Session Controls (Optional)
+
+Control user session behavior after sign-in:
+
+- Restrict download or upload
+- Enforce sign-out after a certain time
+- Limit access on unmanaged devices
 
 ---
 
