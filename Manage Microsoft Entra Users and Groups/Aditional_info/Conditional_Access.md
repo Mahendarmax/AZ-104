@@ -42,6 +42,14 @@ Microsoft Entra Conditional Access lets you enforce security policies based on s
   - Device platform
   - Client app type
 
+| Client App Type                     | Description                                                           |
+| ----------------------------------- | --------------------------------------------------------------------- |
+| **Browser**                         | Web browsers (e.g., Edge, Chrome, Firefox)                            |
+| **Mobile Apps and Desktop Clients** | Apps like Outlook, Teams, OneDrive (supporting modern auth)           |
+| **Legacy Authentication Clients**   | Older apps using basic auth (POP, IMAP, SMTP, Office 2010)            |
+| **Other Clients**                   | Includes apps using modern protocols like PowerShell, Azure CLI, etc. |
+
+
 ### ✅ Access Controls
 - **Grant or Block Access**
 - **Require One or More of the Following**:
