@@ -61,3 +61,4 @@ Microsoft Entra Conditional Access lets you enforce security policies based on s
 
 > 🔒 Conditional Access ensures that only the right users, under the right conditions, can access your organization's data and apps.
 
+---
