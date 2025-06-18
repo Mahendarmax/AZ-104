@@ -11,7 +11,7 @@
   - Multi-factor authentication (MFA)
   - Self-service password reset (SSPR)
   - Identity protection
-  - Conditional Access (./Aditional_info/Conditional_Access.md)
+  - [Conditional Access](./Aditional_info/Conditional_Access.md)
   - Application Proxy
 
 ---
