@@ -39,13 +39,13 @@ Microsoft Entra Conditional Access lets you enforce security policies based on s
 - **Conditions** – Criteria like:
   - ## Sign-in risk
 
-***Sign-in Risk** in Microsoft Entra ID represents the **probability that a given sign-in attempt might be malicious**.
+****Sign-in Risk** in Microsoft Entra ID represents the **probability that a given sign-in attempt might be malicious***.
 
 It is calculated by Microsoft using AI and machine learning, analyzing **user behavior, location, device, and login patterns**.
 
 ---
 
-### 📊 Risk Levels
+#### 📊 Risk Levels
 
 | Risk Level   | Description                                                                 |
 |--------------|-----------------------------------------------------------------------------|
@@ -56,7 +56,7 @@ It is calculated by Microsoft using AI and machine learning, analyzing **user be
 
 ---
 
-### 🧠 How Microsoft Detects Risk
+#### 🧠 How Microsoft Detects Risk
 
 Microsoft detects risky sign-ins using:
 - **Impossible travel** (e.g., same user signs in from India and US within 5 minutes)
@@ -67,7 +67,7 @@ Microsoft detects risky sign-ins using:
 
 ---
 
-### 🛡️ Use Cases in Conditional Access
+#### 🛡️ Use Cases in Conditional Access
 
 You can configure Conditional Access to:
 - **Block high-risk sign-ins**
@@ -77,7 +77,7 @@ You can configure Conditional Access to:
 
 ---
 
-### 🧪 How to Use in a Policy
+#### 🧪 How to Use in a Policy
 
 In a Conditional Access policy:
 
@@ -87,7 +87,7 @@ You must have **Microsoft Entra ID Premium P2** license to use Sign-in Risk in C
 
 ---
 
-### 🏷️ License Requirement
+#### 🏷️ License Requirement
 
 | Feature             | Required License            |
 |---------------------|-----------------------------|
@@ -116,7 +116,7 @@ You must have **Microsoft Entra ID Premium P2** license to use Sign-in Risk in C
 | **Other Clients**                   | Includes apps using modern protocols like PowerShell, Azure CLI, etc. |
 
 
-### ✅ Access Controls
+#### ✅ Access Controls
 - **Grant or Block Access**
 - **Require One or More of the Following**:
   - Multi-Factor Authentication (MFA)
@@ -125,7 +125,7 @@ You must have **Microsoft Entra ID Premium P2** license to use Sign-in Risk in C
   - Approved client app
   - Terms of use acceptance
 
-### ⏱️ Session Controls (Optional)
+#### ⏱️ Session Controls (Optional)
 - Control user session behavior after sign-in, such as:
   - Restricting download or upload
   - Enforcing sign-out after a certain time
