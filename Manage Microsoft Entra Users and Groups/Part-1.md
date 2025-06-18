@@ -1,5 +1,6 @@
 # Microsoft Entra ID – AZ-104 Exam Summary
 ---
+![image](https://github.com/user-attachments/assets/212b449a-763e-4fa4-8695-df9c6f479664)
 
 ## 🔹 1. Microsoft Entra ID vs. Active Directory Domain Services (AD DS)
 
