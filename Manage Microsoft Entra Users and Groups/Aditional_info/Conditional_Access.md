@@ -37,7 +37,7 @@ Microsoft Entra Conditional Access lets you enforce security policies based on s
 - **Users/Groups** – Who the policy applies to
 - **Cloud Apps/Actions** – What apps or operations are being accessed
 - **Conditions** – Criteria like:
-  - Sign-in risk
+  - ## Sign-in risk
 
 ***Sign-in Risk** in Microsoft Entra ID represents the **probability that a given sign-in attempt might be malicious**.
 
@@ -93,8 +93,8 @@ You must have **Microsoft Entra ID Premium P2** license to use Sign-in Risk in C
 |---------------------|-----------------------------|
 | **Sign-in Risk Policy** | Microsoft Entra ID Premium **P2** |
 
-  - Location
-  - Device platform
+  - ## Location
+  - ## Device platform
 
 | Platform    | Description                                  |
 | ----------- | -------------------------------------------- |
@@ -106,7 +106,7 @@ You must have **Microsoft Entra ID Premium P2** license to use Sign-in Risk in C
 | **Unknown** | Devices where the OS can’t be determined     |
 
 
-  - Client app type
+  - ## Client app type
 
 | Client App Type                     | Description                                                           |
 | ----------------------------------- | --------------------------------------------------------------------- |
