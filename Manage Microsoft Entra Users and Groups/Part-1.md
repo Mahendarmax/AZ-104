@@ -88,5 +88,37 @@
 
 ---
 
+# 🔁 Active Directory vs Microsoft Entra ID (Azure AD)
+
+This document highlights the key differences between **Active Directory (AD)** and **Microsoft Entra ID (formerly Azure AD)** for identity and access management.
+
+---
+
+## 📊 Feature Comparison Table
+
+| **Feature / Category**                | **Active Directory (AD)**                                | **Microsoft Entra ID (Azure AD)**                                |
+|--------------------------------------|-----------------------------------------------------------|------------------------------------------------------------------|
+| **Type of Service**                  | On-premises directory service                             | Cloud-based identity and access management (IDaaS)               |
+| **Hosting Environment**              | Runs on Windows Server (local data centers)               | Runs in Microsoft Azure (cloud)                                  |
+| **Protocol Support**                 | LDAP, Kerberos, NTLM                                      | SAML, OAuth 2.0, OpenID Connect                                  |
+| **Primary Use Case**                 | Authentication for on-prem servers, desktops, and apps    | Authentication for cloud apps (M365, Azure, SaaS)                |
+| **Device Join Type**                 | Domain-joined (Windows PCs, servers)                      | Azure AD-joined / Hybrid Azure AD-joined                         |
+| **Group Policy Support**            | Yes (via GPOs, OUs, etc.)                                 | No GPOs; uses Intune for modern management                       |
+| **Organizational Units (OUs)**       | Yes, for delegation and GPO scoping                       | Not supported; use groups and roles instead                      |
+| **Internet Access**                  | Not designed for direct internet access                   | Designed for internet-native applications                        |
+| **Single Sign-On (SSO)**             | Limited to on-prem AD-integrated apps                     | SSO for thousands of SaaS/cloud applications                     |
+| **Multi-Factor Authentication (MFA)**| Requires additional setup (e.g., NPS Extension)           | Built-in support (with Premium P1 or P2 license)                 |
+| **Self-Service Password Reset (SSPR)**| No native support                                         | Supported (Free tier for cloud users, more in Premium)           |
+| **Conditional Access**              | No                                                        | Yes (Premium feature)                                            |
+| **User Federation**                 | Limited / complex to configure                            | Native support for B2B and B2C scenarios                         |
+| **License / Cost**                   | Windows Server CALs                                       | Free, Basic, Premium P1/P2 tiers                                 |
+| **Application Access**              | Mostly internal/on-prem                                   | Secure access to cloud and hybrid apps                           |
+| **Join to Microsoft 365 / Azure**    | Not possible directly                                     | Core identity provider for Microsoft 365 and Azure               |
+
+---
+
+📘 **Note**: While both services manage identities, **Active Directory** is suited for on-premises environments, whereas **Microsoft Entra ID** is optimized for cloud-native solutions.
+
+
 📘 **Note**: Microsoft Entra ID is not a replacement for AD DS in traditional environments but complements it for modern cloud-first identity and access management.
 
