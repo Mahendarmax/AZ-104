@@ -1,9 +1,9 @@
 ---
-# 🧩 Microsoft Entra Domain Services
+## 🧩 Microsoft Entra Domain Services
 
 ![image](https://github.com/user-attachments/assets/e56ab0c1-10f2-4d70-976b-f9974f7f83c8)
 
-Microsoft Entra Domain Services (formerly Azure AD DS) allows organizations to use domain services like **Kerberos**, **NTLM**, and **Group Policy** in Azure — **without deploying domain controllers**.
+### Microsoft Entra Domain Services (formerly Azure AD DS) allows organizations to use domain services like **Kerberos**, **NTLM**, and **Group Policy** in Azure — **without deploying domain controllers**.
 ---
 
 ---
