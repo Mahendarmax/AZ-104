@@ -48,33 +48,7 @@ Conditional Access is a **Premium feature**:
 **Sign-in Risk** in Microsoft Entra ID represents the **probability that a given sign-in attempt might be malicious**,  
 calculated using AI and machine learning to analyze user behavior, location, device, and login patterns.
 
----
 
-## 🔐 Microsoft Entra ID – P1 vs P2 Feature Comparison
-
-| 🔧 Feature / Capability                                         | ✅ P1 | 🔐 P2 |
-|----------------------------------------------------------------|:----:|:----:|
-| ✅ **Basic Conditional Access Policies**                        | ✔️   | ✔️   |
-| ├─ User/Group targeting                                         | ✔️   | ✔️   |
-| ├─ App-based targeting                                          | ✔️   | ✔️   |
-| ├─ Location-based condition                                     | ✔️   | ✔️   |
-| ├─ Device platform (iOS, Android, Windows, etc.)               | ✔️   | ✔️   |
-| ├─ Require Multi-Factor Authentication (MFA)                   | ✔️   | ✔️   |
-| ├─ Require compliant/hybrid Azure AD joined device             | ✔️   | ✔️   |
-| ├─ Require approved client app                                 | ✔️   | ✔️   |
-| ├─ Require app protection policy                               | ✔️   | ✔️   |
-| ├─ Sign-in frequency / Session controls                        | ✔️   | ✔️   |
-| ├─ Block or allow access based on conditions                   | ✔️   | ✔️   |
-| 📊 Conditional Access insights and logging                     | ✔️   | ✔️   |
-| ⚠️ **Sign-in Risk Condition** (based on real-time analysis)    | ❌   | ✔️   |
-| ⚠️ **User Risk Condition** (based on identity protection)      | ❌   | ✔️   |
-| 🔐 Risk-based Conditional Access (automated decisioning)       | ❌   | ✔️   |
-| 🔐 Identity Protection (detect & respond to risky activity)    | ❌   | ✔️   |
-| 👥 Access Reviews                                               | ❌   | ✔️   |
-| 🔐 Privileged Identity Management (PIM)                         | ❌   | ✔️   |
-| 🧭 Entitlement Management & Lifecycle Workflows                 | ❌   | ✔️   |
-
----
 
 ### 📊 Risk Levels
 
@@ -120,6 +94,34 @@ In a Conditional Access policy:
 | Feature               | Required License                      |
 |-----------------------|---------------------------------------|
 | **Sign-in Risk Policy** | Microsoft Entra ID Premium **P2**   |
+
+---
+
+---
+
+## 🔐 Microsoft Entra ID – P1 vs P2 Feature Comparison
+
+| 🔧 Feature / Capability                                         | ✅ P1 | 🔐 P2 |
+|----------------------------------------------------------------|:----:|:----:|
+| ✅ **Basic Conditional Access Policies**                        | ✔️   | ✔️   |
+| ├─ User/Group targeting                                         | ✔️   | ✔️   |
+| ├─ App-based targeting                                          | ✔️   | ✔️   |
+| ├─ Location-based condition                                     | ✔️   | ✔️   |
+| ├─ Device platform (iOS, Android, Windows, etc.)               | ✔️   | ✔️   |
+| ├─ Require Multi-Factor Authentication (MFA)                   | ✔️   | ✔️   |
+| ├─ Require compliant/hybrid Azure AD joined device             | ✔️   | ✔️   |
+| ├─ Require approved client app                                 | ✔️   | ✔️   |
+| ├─ Require app protection policy                               | ✔️   | ✔️   |
+| ├─ Sign-in frequency / Session controls                        | ✔️   | ✔️   |
+| ├─ Block or allow access based on conditions                   | ✔️   | ✔️   |
+| 📊 Conditional Access insights and logging                     | ✔️   | ✔️   |
+| ⚠️ **Sign-in Risk Condition** (based on real-time analysis)    | ❌   | ✔️   |
+| ⚠️ **User Risk Condition** (based on identity protection)      | ❌   | ✔️   |
+| 🔐 Risk-based Conditional Access (automated decisioning)       | ❌   | ✔️   |
+| 🔐 Identity Protection (detect & respond to risky activity)    | ❌   | ✔️   |
+| 👥 Access Reviews                                               | ❌   | ✔️   |
+| 🔐 Privileged Identity Management (PIM)                         | ❌   | ✔️   |
+| 🧭 Entitlement Management & Lifecycle Workflows                 | ❌   | ✔️   |
 
 ---
 
