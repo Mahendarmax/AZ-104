@@ -49,15 +49,6 @@ You can enable **Microsoft Entra Domain Services** in the **Azure Portal**:
 ---
 
 ---
-### 🔹 Purpose and Use Case
-
-- Enables **domain-join, LDAP, NTLM, and Kerberos authentication** in Azure  
-- Ideal for **migrating LOB applications** that rely on domain authentication  
-- Requires **no deployment of on-prem or cloud-based domain controllers**  
-- Fully **compatible with traditional AD DS**
-
----
-
 ### 🔹 Alternatives Without Microsoft Entra Domain Services
 
 1. **Site-to-site VPN** between on-premises and Azure IaaS  
