@@ -159,3 +159,105 @@ the key differences between **Active Directory (AD)** and **Microsoft Entra ID (
 - **Deployment slot-level authentication settings** can be configured independently for staging or production use cases.
 
 ---
+
+---
+
+# 🧩 Microsoft Entra Domain Services
+
+Microsoft Entra Domain Services (formerly Azure AD DS) allows organizations to use domain services like **Kerberos**, **NTLM**, and **Group Policy** in Azure — **without deploying domain controllers**.
+
+---
+
+---
+
+### 📦 Real-World Example
+
+**Scenario**:  
+Contoso Ltd. runs a legacy accounting app that only works if the server it's installed on is **domain-joined** and authenticates users via **Kerberos**. They want to move this app to Azure.
+
+**Options**:
+
+1. ❌ **Deploy Domain Controller in Azure VM**  
+   - High maintenance (patching, monitoring, replication)  
+   - Costly and requires additional admin effort
+
+2. ✅ **Use Microsoft Entra Domain Services (Entra DS)**  
+   - Contoso enables Entra DS in their Azure virtual network  
+   - They domain-join the Azure VM hosting the app to Entra DS  
+   - Users log in with their corporate credentials  
+   - No on-prem AD dependency or VPN needed — simple and scalable
+
+---
+
+### 🔹 Purpose and Use Case
+
+- Enables **domain-join, LDAP, NTLM, and Kerberos authentication** in Azure  
+- Ideal for **migrating LOB applications** that rely on domain authentication  
+- Requires **no deployment of on-prem or cloud-based domain controllers**  
+- Fully **compatible with traditional AD DS**
+
+---
+
+### 🔹 Alternatives Without Microsoft Entra Domain Services
+
+1. **Site-to-site VPN** between on-premises and Azure IaaS  
+   - Authentication traffic crosses the VPN  
+
+2. **Replica domain controllers** deployed in Azure  
+   - Replication crosses the VPN, but authentication stays in the cloud  
+
+> ⚠️ Both methods add complexity, cost, and administrative overhead.
+
+---
+
+### 🔹 Benefits of Microsoft Entra Domain Services
+
+- No need to manage or patch **domain controllers**  
+- Eliminates the need for **AD replication** setup  
+- No **Domain Admin** or **Enterprise Admin** rights required  
+- Supports **Microsoft Entra Connect** for hybrid identity scenarios  
+- Can operate as a **cloud-only directory service**
+
+---
+
+### 🔹 Limitations
+
+| Limitation                          | Description                                                                 |
+|-------------------------------------|-----------------------------------------------------------------------------|
+| ❌ Schema extension                 | Not supported                                                               |
+| ❌ Nested Organizational Units      | Flat OU structure only                                                      |
+| ❌ Custom Group Policy filtering    | WMI filters and security group targeting are not supported                  |
+| ✅ Built-in GPOs                   | Available, but limited to computer/user accounts                            |
+| ❌ OU targeting for built-in GPOs  | Not supported                                                               |
+
+---
+
+### 🔹 Application Scenarios
+
+- Supports legacy protocols like **LDAP**, **NTLM**, and **Kerberos**  
+- Common use cases:
+  - Hosting **Microsoft SQL Server**  
+  - Hosting **Microsoft SharePoint Server**  
+  - Migrating legacy LOB apps to **Azure IaaS VMs**  
+- Works **without VPN or on-prem AD infrastructure**
+
+---
+
+### 🔹 Licensing and Enablement
+
+- Enabled via **Azure Portal**  
+- Billed hourly (pay-as-you-go) based on **directory size**  
+- Requires **Microsoft Entra ID P1 or P2 license**
+
+---
+
+### 🔹 Integration with On-Premises AD (Optional)
+
+- Use **Microsoft Entra Connect** to sync user identities  
+- Allows users to use **the same credentials** in both on-prem AD and Entra DS
+
+---
+
+> 📌 **Exam Tip**:  
+> Microsoft Entra Domain Services is the best option for running legacy apps in Azure **without setting up and managing domain controllers or VPNs**.
+---
