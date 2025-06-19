@@ -90,7 +90,7 @@
 
 # 🔁 Active Directory vs Microsoft Entra ID (Azure AD)
 
-This document highlights the key differences between **Active Directory (AD)** and **Microsoft Entra ID (formerly Azure AD)** for identity and access management.
+the key differences between **Active Directory (AD)** and **Microsoft Entra ID (formerly Azure AD)** for identity and access management.
 
 ---
 
