@@ -1,42 +1,35 @@
 
 ---
 
-## 🧩 Microsoft Entra Domain Services
+🧩 Microsoft Entra Domain Services
 
-┌─────────────────────┐
-│ On-Prem User Device │
-│ (AD Joined, HR User)│
-└─────────┬───────────┘
-          │
-          │
-          ▼
-   🌐 VPN / ExpressRoute
-          │
-          ▼
-┌────────────────────────────┐
-│ Azure Virtual Network (VNet)│
-│                            │
-│ ┌────────────────────────┐ │
-│ │ Legacy App VM          │ │
-│ │ (Domain-joined to      │ │
-│ │ Entra Domain Services) │ │
-│ └────────────────────────┘ │
-└──────────┬─────────────────┘
-           │ Auth using Kerberos/NTLM
-           ▼
-┌────────────────────────────┐
-│ Microsoft Entra Domain     │
-│ Services (Azure AD DS)     │
-│ - Provides Kerberos, LDAP  │
-│ - Managed Domain           │
-└──────────┬─────────────────┘
-           │
-           ▼
-┌────────────────────────────┐
-│ Microsoft Entra ID         │
-│ (Azure AD – Identity Source)│
-│ Synced via Entra Connect   │
-└────────────────────────────┘
+   ┌─────────────────────┐
+   │ On-Prem User Device │
+   │ (AD Joined, HR User)│
+   └─────────┬───────────┘
+             │
+             ▼ VPN / ExpressRoute
+   ┌────────────────────────────┐
+   │ Azure Virtual Network      │
+   │ (VNet)                     │
+   │   ┌─────────────────────┐  │
+   │   │ Legacy App VM       │  │
+   │   │ (Domain-joined to   │  │
+   │   │  Entra DS)          │  │
+   │   └─────────────────────┘  │
+   └────────────┬──────────────┘
+                ▼ Auth using Kerberos/NTLM
+   ┌──────────────────────────────────────┐
+   │ Microsoft Entra Domain Services      │
+   │ (Azure AD DS)                        │
+   │ - Provides Kerberos, LDAP            │
+   └────────────┬─────────────────────────┘
+                ▼
+   ┌──────────────────────────────────────┐
+   │ Microsoft Entra ID                  │
+   │ (Azure AD – Identity Source)        │
+   │ Synced via Entra Connect            │
+   └──────────────────────────────────────┘
 
 
 ---
