@@ -63,7 +63,7 @@ You can enable **Microsoft Entra Domain Services** in the **Azure Portal**:
 ---
 ## 🖥️ What is Domain Join (Short)
 
-🧠 ### Domain Join is the process of registering a device (usually Windows) into a domain, so that it becomes part of a managed environment controlled by Active Directory (on-prem or Entra Domain Services in Azure).
+🧠 ### Domain Join is the process of registering a device (usually Windows) into a domain, so that it becomes part of a managed environment controlled by Active Directory (on-prem or Entra Domain Services in Azure) ###.
 
 - ✅ Be **centrally managed**
 - ✅ Use **domain credentials** to log in
