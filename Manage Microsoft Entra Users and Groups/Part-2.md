@@ -47,32 +47,6 @@ You can enable **Microsoft Entra Domain Services** in the **Azure Portal**:
 
 ---
 
-## 🔹 Alternatives Without Microsoft Entra Domain Services
-
-1. **Site-to-site VPN** between on-premises and Azure IaaS  
-   - Authentication traffic crosses the VPN  
-
-2. **Replica domain controllers** deployed in Azure  
-   - Replication crosses the VPN, but authentication stays in the cloud  
-
-> ⚠️ Both methods add complexity, cost, and administrative overhead.
-
----
-
-## 🔹 Licensing and Enablement
-
-- Enabled via **Azure Portal**  
-- Billed hourly (pay-as-you-go) based on **directory size**  
-- Requires **Microsoft Entra ID P1 or P2 license**
-
----
-
-## 🔹 Integration with On-Premises AD (Optional)
-
-- Use **Microsoft Entra Connect** to sync user identities  
-- Allows users to use **the same credentials** in both on-prem AD and Entra DS
-
----
 
 ---
 
@@ -87,17 +61,9 @@ You can enable **Microsoft Entra Domain Services** in the **Azure Portal**:
 ---
 
 ---
-
-## When to use both
-
-Use **Microsoft Entra ID** for **modern applications and secure identity** management.  
-Use **Microsoft Entra Domain Services** when **legacy systems** require **domain join** or traditional **Kerberos/LDAP protocols**.
-
----
----
 ## 🖥️ What is Domain Join (Short)
 
-🧠 **Domain Join** connects a **Windows device** (PC or VM) to a **central directory** (like **Active Directory** or **Microsoft Entra Domain Services**) so it can:
+🧠 ### Domain Join is the process of registering a device (usually Windows) into a domain, so that it becomes part of a managed environment controlled by Active Directory (on-prem or Entra Domain Services in Azure).
 
 - ✅ Be **centrally managed**
 - ✅ Use **domain credentials** to log in
