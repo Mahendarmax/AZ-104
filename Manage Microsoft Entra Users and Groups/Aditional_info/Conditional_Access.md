@@ -86,6 +86,8 @@ In a Conditional Access policy:
 |-----------------------|---------------------------------------|
 | **Sign-in Risk Policy** | Microsoft Entra ID Premium **P2**   |
 
+Sign-in Risk is a specific condition you can use in Conditional Access. But to use sign-in risk as a condition, you must have a P2 license (P1 won’t work).
+
 ---
 
 ### 🌍 Location Condition
