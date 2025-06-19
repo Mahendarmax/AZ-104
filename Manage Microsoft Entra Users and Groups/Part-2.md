@@ -1,40 +1,11 @@
----
-## 🆚 Microsoft Entra ID vs Microsoft Entra Domain Services
-
-| Feature / Aspect                  | 🧭 **Microsoft Entra ID** (Azure AD)                    | 🏢 **Microsoft Entra Domain Services** (Azure AD DS)           |
-|----------------------------------|----------------------------------------------------------|----------------------------------------------------------------|
-| 🔑 Purpose                       | Cloud-based identity and access management               | Classic domain services in the cloud                          |
-| 💻 Domain Join                   | ❌ Not supported                                          | ✅ Supported (for Azure VMs)                                   |
-| 🗝️ Kerberos / NTLM Auth         | ❌ Not supported                                          | ✅ Supported                                                   |
-| 📂 LDAP Support                  | ❌ Not supported                                          | ✅ Read-only LDAP support                                      |
-| 🧩 Group Policy (GPO)            | ❌ Not supported                                          | ✅ Basic GPO supported                                         |
-| ☁️ Cloud-Only Option             | ✅ Yes                                                    | ✅ Yes                                                         |
-| 🔄 Hybrid Identity Integration   | ✅ With Entra Connect                                     | ✅ With Entra Connect                                          |
-| 🛠️ Use Case                     | SSO, MFA, modern SaaS and cloud-native apps              | Legacy apps needing AD join, Kerberos, LDAP, or GPO           |
-| 👷 Management                    | You manage identity settings                             | Microsoft manages domain controllers                          |
-
----
----
-## 🧠 Easy Analogy
-
-| Entra ID                                   | Entra Domain Services                                           |
-|-------------------------------------------|-----------------------------------------------------------------|
-| Like a **cloud phonebook** for apps       | Like a **classic domain controller**, but fully managed in Azure |
-| **Identity-focused**                      | **Domain service–focused**                                     |
-| Used for **SSO, MFA, access control**     | Used for **apps needing Kerberos, NTLM, LDAP, domain join**     |
 
 ---
 
-> ✅ Use **Microsoft Entra ID** for modern access and identity management  
-> ✅ Use **Microsoft Entra Domain Services** when you need traditional AD features without hosting your own domain controllers
----
----
 ## 🧩 Microsoft Entra Domain Services
 
 ![image](https://github.com/user-attachments/assets/e56ab0c1-10f2-4d70-976b-f9974f7f83c8)
 
-### Microsoft Entra Domain Services (formerly Azure AD DS) allows organizations to use domain services like **Kerberos**, **NTLM**, and **Group Policy** in Azure — **without deploying domain controllers**.
----
+Microsoft Entra Domain Services (formerly Azure AD DS) allows organizations to use domain services like **Kerberos**, **NTLM**, and **Group Policy** in Azure — **without deploying domain controllers**.
 
 ---
 
@@ -69,7 +40,7 @@ You can enable **Microsoft Entra Domain Services** in the **Azure Portal**:
 2. Search for **Microsoft Entra Domain Services**
 3. Click **+ Create**
 4. Provide:
-   - **DNS domain name** (e.g., corp.contoso.com)
+   - **DNS domain name** (e.g., `corp.contoso.com`)
    - **Virtual Network** (same VNet as your VMs)
    - **Resource group**
 5. Review and click **Create**
@@ -78,8 +49,7 @@ You can enable **Microsoft Entra Domain Services** in the **Azure Portal**:
 
 ---
 
----
-### 🔹 Alternatives Without Microsoft Entra Domain Services
+## 🔹 Alternatives Without Microsoft Entra Domain Services
 
 1. **Site-to-site VPN** between on-premises and Azure IaaS  
    - Authentication traffic crosses the VPN  
@@ -91,9 +61,7 @@ You can enable **Microsoft Entra Domain Services** in the **Azure Portal**:
 
 ---
 
----
-
-### 🔹 Licensing and Enablement
+## 🔹 Licensing and Enablement
 
 - Enabled via **Azure Portal**  
 - Billed hourly (pay-as-you-go) based on **directory size**  
@@ -101,13 +69,56 @@ You can enable **Microsoft Entra Domain Services** in the **Azure Portal**:
 
 ---
 
-### 🔹 Integration with On-Premises AD (Optional)
+## 🔹 Integration with On-Premises AD (Optional)
 
 - Use **Microsoft Entra Connect** to sync user identities  
 - Allows users to use **the same credentials** in both on-prem AD and Entra DS
 
 ---
 
-> 📌 **Exam Tip**:  
-> Microsoft Entra Domain Services is the best option for running legacy apps in Azure **without setting up and managing domain controllers or VPNs**.
+---
+## 🆚 Microsoft Entra ID vs Microsoft Entra Domain Services
+
+| Feature / Aspect                | 🧭 **Microsoft Entra ID** (Azure AD)                | 🏢 **Microsoft Entra Domain Services** (Azure AD DS)         |
+|--------------------------------|------------------------------------------------------|--------------------------------------------------------------|
+| 🔑 Purpose                     | Cloud-based identity and access management           | Classic domain services in the cloud                         |
+| 💻 Domain Join                 | ❌ Not supported                                      | ✅ Supported (for Azure VMs)                                  |
+| 🗝️ Kerberos / NTLM Auth       | ❌ Not supported                                      | ✅ Supported                                                  |
+| 📂 LDAP Support                | ❌ Not supported                                      | ✅ Read-only LDAP support                                     |
+| 🧩 Group Policy (GPO)          | ❌ Not supported                                      | ✅ Basic GPO supported                                        |
+| ☁️ Cloud-Only Option           | ✅ Yes                                                | ✅ Yes                                                        |
+| 🔄 Hybrid Identity Integration | ✅ With Entra Connect                                 | ✅ With Entra Connect                                         |
+| 🛠️ Use Case                   | SSO, MFA, modern SaaS and cloud-native apps          | Legacy apps needing AD join, Kerberos, LDAP, or GPO          |
+| 👷 Management                  | You manage identity settings                         | Microsoft manages domain controllers                         |
+
+---
+
+## 🧠 Easy Analogy
+
+| Entra ID                                 | Entra Domain Services                                          |
+|------------------------------------------|----------------------------------------------------------------|
+| Like a **cloud phonebook** for apps      | Like a **classic domain controller**, but fully managed in Azure |
+| **Identity-focused**                     | **Domain service–focused**                                     |
+| Used for **SSO, MFA, access control**    | Used for **apps needing Kerberos, NTLM, LDAP, domain join**    |
+
+---
+
+---
+
+## When to use both
+
+Use **Microsoft Entra ID** for **modern applications and secure identity** management.  
+Use **Microsoft Entra Domain Services** when **legacy systems** require **domain join** or traditional **Kerberos/LDAP protocols**.
+
+---
+---
+## 🖥️ What is Domain Join (Short)
+
+🧠 **Domain Join** connects a **Windows device** (PC or VM) to a **central directory** (like **Active Directory** or **Microsoft Entra Domain Services**) so it can:
+
+- ✅ Be **centrally managed**
+- ✅ Use **domain credentials** to log in
+- ✅ Receive and apply **Group Policies**
+- ✅ Access **shared network resources** (like drives, printers, internal apps)
+
 ---
