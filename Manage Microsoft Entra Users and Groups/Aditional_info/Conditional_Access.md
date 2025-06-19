@@ -39,16 +39,18 @@ Conditional Access is a **Premium feature**:
 
 - **Users/Groups** – Who the policy applies to  
 - **Cloud Apps/Actions** – What apps or operations are being accessed  
-- **Conditions** – Criteria like:
+- **Conditions** – Criteria like location, device, platform, sign-in risk, etc.
 
 ---
 
-### 🔍 Sign-in Risk
+## 🔍 Sign-in Risk
 
-**Sign-in Risk** in Microsoft Entra ID represents the **probability that a given sign-in attempt might be malicious**.  
-It is calculated using AI and machine learning to analyze user behavior, location, device, and login patterns.
+**Sign-in Risk** in Microsoft Entra ID represents the **probability that a given sign-in attempt might be malicious**,  
+calculated using AI and machine learning to analyze user behavior, location, device, and login patterns.
 
-# 🔐 Microsoft Entra ID – P1 vs P2 Feature Comparison
+---
+
+## 🔐 Microsoft Entra ID – P1 vs P2 Feature Comparison
 
 | 🔧 Feature / Capability                                         | ✅ P1 | 🔐 P2 |
 |----------------------------------------------------------------|:----:|:----:|
@@ -72,13 +74,9 @@ It is calculated using AI and machine learning to analyze user behavior, locatio
 | 🔐 Privileged Identity Management (PIM)                         | ❌   | ✔️   |
 | 🧭 Entitlement Management & Lifecycle Workflows                 | ❌   | ✔️   |
 
-> ✔️ = Included  
-> ❌ = Not included  
-> P2 includes all P1 features, plus advanced security/governance
+---
 
-
-
-#### 📊 Risk Levels
+### 📊 Risk Levels
 
 | Risk Level           | Description                                                                 |
 |----------------------|-----------------------------------------------------------------------------|
@@ -87,7 +85,9 @@ It is calculated using AI and machine learning to analyze user behavior, locatio
 | **High**             | Sign-in is very likely to be malicious (e.g., impossible travel, leaked creds) |
 | **No risk detected** | Microsoft Entra ID detects no issues with the sign-in                       |
 
-#### 🧠 How Microsoft Detects Risk
+---
+
+### 🧠 How Microsoft Detects Risk
 
 - **Impossible travel** (e.g., same user signs in from India and US within 5 minutes)  
 - **Atypical travel**  
@@ -95,38 +95,41 @@ It is calculated using AI and machine learning to analyze user behavior, locatio
 - **Sign-ins from anonymous IPs or Tor**  
 - **Leaked credentials**
 
-#### 🛡️ Use Cases in Conditional Access
+---
+
+### 🛡️ Use Cases in Conditional Access
 
 - Block high-risk sign-ins  
 - Require MFA for medium or high-risk logins  
 - Allow only low/no-risk sign-ins  
 - Redirect high-risk users to secure password reset
 
-#### 🧪 How to Use in a Policy
+---
+
+### 🧪 How to Use in a Policy
 
 In a Conditional Access policy:
 
-> Go to **Conditions → Sign-in Risk**, and choose which risk level(s) will trigger the policy.
-
+> Go to **Conditions → Sign-in Risk**, and choose which risk level(s) will trigger the policy.  
 > ⚠️ Requires **Microsoft Entra ID Premium P2** license.
 
-#### 🏷️ License Requirement
+---
+
+### 🏷️ License Requirement
 
 | Feature               | Required License                      |
 |-----------------------|---------------------------------------|
 | **Sign-in Risk Policy** | Microsoft Entra ID Premium **P2**   |
 
-Sign-in Risk is a specific condition you can use in Conditional Access. But to use sign-in risk as a condition, you must have a P2 license (P1 won’t work).
-
 ---
 
-### 🌍 Location Condition
+## 🌍 Location Condition
 
 Use **Named Locations** (e.g., trusted IP ranges or countries) to limit access.
 
 ---
 
-### 💻 Device Platform Condition
+## 💻 Device Platform Condition
 
 Specify the device platforms that policies apply to:
 
@@ -141,7 +144,7 @@ Specify the device platforms that policies apply to:
 
 ---
 
-### 📱 Client App Type
+## 📱 Client App Type
 
 Control access by application type:
 
@@ -154,7 +157,7 @@ Control access by application type:
 
 ---
 
-### ✅ Access Controls
+## ✅ Access Controls
 
 Decide whether to:
 
@@ -168,7 +171,7 @@ Decide whether to:
 
 ---
 
-### ⏱️ Session Controls (Optional)
+## ⏱️ Session Controls (Optional)
 
 Control user session behavior after sign-in:
 
@@ -178,6 +181,6 @@ Control user session behavior after sign-in:
 
 ---
 
-> 🔒 Conditional Access ensures that only the right users, under the right conditions, can access your organization's data and apps.
+> 🔒 **Conditional Access ensures that only the right users, under the right conditions, can access your organization's data and apps.**
 
 ---
