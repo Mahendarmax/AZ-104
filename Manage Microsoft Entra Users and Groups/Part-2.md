@@ -5,6 +5,52 @@
 
  ![image](https://github.com/user-attachments/assets/2cfe118e-1a66-4152-b5d1-5ad4ac90e1e0)
 
+how an **on-premises user** accesses a **legacy application hosted in Azure**, using **Microsoft Entra Domain Services (Azure AD DS)**.
+
+## 🔁 Step-by-Step Flow
+
+### 1. 🧑‍💼 On-Prem User Device
+- The user logs in from a **domain-joined PC or laptop**
+- Example: An HR user trying to access a legacy HR application
+
+### 2. 🌐 VPN / ExpressRoute
+- The user's device is connected to Azure through a **secure channel**:
+  - 🔒 VPN connection, or  
+  - ⚡ Azure ExpressRoute (private, high-speed connection)
+- This allows communication between on-prem devices and Azure resources
+
+### 3. 🖧 Azure Virtual Network (VNet)
+- A **private network in Azure** where your app and VM live
+- Works like an on-premises network, but in the cloud
+
+### 4. 🖥️ Legacy App VM
+- The legacy application is hosted on a **Windows VM in Azure**
+- This VM is **domain-joined to Microsoft Entra Domain Services**
+
+### 5. 🔐 Authentication via Microsoft Entra Domain Services
+- The VM authenticates the user using **Kerberos or NTLM**
+- **Microsoft Entra Domain Services (Azure AD DS)** handles authentication  
+  - No need to deploy domain controllers yourself
+  - Supports **LDAP**, **Group Policy**, and **classic Windows auth**
+
+### 6. 🧠 Microsoft Entra ID (Azure AD)
+- Acts as the **identity source** for the organization
+- On-premises users are **synced** to Entra ID using **Microsoft Entra Connect**
+- Entra ID passes identities to **Entra Domain Services**
+
+## ✅ Summary Table
+
+| Component                        | Role/Purpose                                               |
+|----------------------------------|-------------------------------------------------------------|
+| On-Prem User Device              | Source device (e.g., user PC)                              |
+| VPN / ExpressRoute               | Secure connection to Azure                                 |
+| Azure Virtual Network (VNet)     | Hosts the VM and app in a private Azure network            |
+| Legacy App VM                    | App requiring domain join and Kerberos auth                |
+| Microsoft Entra Domain Services  | Authenticates using Kerberos/NTLM; provides LDAP/GPO       |
+| Microsoft Entra ID (Azure AD)    | Central identity source, synced from on-prem via Entra Connect |
+
+---
+
 ---
 
 ## 🏛️ Hosting Legacy Applications in Azure
