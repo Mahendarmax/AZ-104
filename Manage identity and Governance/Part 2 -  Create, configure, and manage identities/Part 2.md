@@ -131,3 +131,32 @@ To **restore** or **permanently delete** a user, you must have **one** of the fo
 - 👤 User Administrator  
 
 ---
+---
+# 🧪 Exercise – Restore or Remove Deleted Users
+
+## Requirements
+- Microsoft Entra tenant
+- User Administrator role or higher
+
+## 🔴 Remove a User
+
+1. Go to the [Microsoft Entra admin center](https://entra.microsoft.com).
+2. In the left pane, select **Users** under **Identity**.
+3. Check the box for the user to be deleted (e.g., Chris Green).
+4. Click **Delete user**.
+5. Confirm by selecting **OK**.
+
+---
+
+## 🔁 Restore a Deleted User
+![image](https://github.com/user-attachments/assets/2c8a1fb2-1b1b-4c8f-88fc-f351719e050e)
+
+1. In the **Users** page, select **Deleted users**.
+2. Select the deleted user from the list.
+3. Click **Restore user**.
+4. Confirm by selecting **OK**.
+5. Go to **All users** to verify restoration.
+
+> ⚠️ Deleted users are permanently removed after 30 days and cannot be restored.
+
+---
