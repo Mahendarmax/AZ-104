@@ -1,11 +1,10 @@
 # Microsoft Entra ID 
 ---
-![image](https://github.com/user-attachments/assets/212b449a-763e-4fa4-8695-df9c6f479664)
 
 ![image](https://github.com/user-attachments/assets/92e11929-d672-4201-87a3-1d471a9d3fa0)
-
 ![image](https://github.com/user-attachments/assets/204c2749-58b3-4824-8f0e-017080dab02b)
 
+![image](https://github.com/user-attachments/assets/212b449a-763e-4fa4-8695-df9c6f479664)
 
 ## 🔹 1. Microsoft Entra ID vs. Active Directory Domain Services (AD DS)
 
