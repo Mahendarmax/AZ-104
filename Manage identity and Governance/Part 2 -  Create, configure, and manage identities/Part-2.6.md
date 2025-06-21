@@ -27,7 +27,6 @@
 ---
 
 ### 🔄 Update User License Assignments
-![image](https://github.com/user-attachments/assets/8c1f4f5e-725d-4f13-ab36-b0b3c3bc4f44)
 
 1. In **Microsoft Entra Admin Center**, go to:
    - **Identity** > **Users** > select **Dominique Koch**
@@ -36,5 +35,8 @@
    - ✅ Select one or more licenses using checkboxes  
    - 📸 (Screenshot would show available licenses highlighted)
 4. Click **Save** to apply changes
+![image](https://github.com/user-attachments/assets/7cbe51e4-db38-400d-98d1-cff648e597a3)
 
 > This action updates license availability for the specific user.
+
+---
