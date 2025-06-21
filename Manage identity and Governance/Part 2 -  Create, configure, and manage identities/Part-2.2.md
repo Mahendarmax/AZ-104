@@ -18,6 +18,7 @@ Groups in Microsoft Entra ID simplify access management by allowing you to:
 ---
 
 ## 🧱 Group Types in Microsoft Entra ID
+![image](https://github.com/user-attachments/assets/cc9ec7a4-862c-43b0-a252-16c8d0335723)
 
 ### 🔐 Security Groups
 
