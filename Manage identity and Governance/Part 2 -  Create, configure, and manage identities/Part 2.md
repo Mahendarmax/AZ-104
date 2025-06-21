@@ -93,7 +93,7 @@ To view user accounts:
 
 ```text
 Azure Portal → Microsoft Entra ID → Users → All Users
-
+```
 ---
 # 🧑‍💼 Restore or Remove a Recently Deleted User – Microsoft Entra ID (Azure AD)
 
