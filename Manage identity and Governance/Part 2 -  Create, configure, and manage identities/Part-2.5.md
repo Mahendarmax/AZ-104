@@ -1,4 +1,4 @@
-# 📘 Microsoft Entra ID: Group License Management – Exam Notes
+# 📘 Microsoft Entra ID: Group License Management 
 
 ---
 
