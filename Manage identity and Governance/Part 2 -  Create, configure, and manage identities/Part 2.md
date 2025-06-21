@@ -93,3 +93,41 @@ To view user accounts:
 
 ```text
 Azure Portal → Microsoft Entra ID → Users → All Users
+
+---
+# 🧑‍💼 Restore or Remove a Recently Deleted User – Microsoft Entra ID (Azure AD)
+
+## 🧾 Overview
+
+When a user is deleted in **Microsoft Entra ID**, the account enters a **soft-deleted (suspended)** state for **30 days**.
+
+- ✅ During this time, the user **can be restored** with all properties intact.
+- ⏳ After 30 days, the account is **permanently deleted**.
+- ❌ Once permanently deleted, the account **cannot be recovered**.
+
+## ⚠️ Important
+
+> ❗ **Neither you nor Microsoft customer support can restore a permanently deleted user.**
+
+---
+
+## 🔍 Actions You Can Perform
+
+| Action                     | Description                                                      |
+|---------------------------|------------------------------------------------------------------|
+| View deleted users        | See a list of restorable users.                                 |
+| Restore a deleted user    | Re-enable the user within the 30-day window.                    |
+| Permanently delete a user | Manually remove a user before the 30-day retention expires.     |
+
+---
+
+## 🔐 Required Permissions
+
+To **restore** or **permanently delete** a user, you must have **one** of the following roles:
+
+- 🔑 Global Administrator  
+- 🛠️ Partner Tier-1 Support  
+- 🛠️ Partner Tier-2 Support  
+- 👤 User Administrator  
+
+---
