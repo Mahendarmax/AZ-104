@@ -2,7 +2,7 @@
 
 ### 🛠️ Prerequisites:
 - A Microsoft Entra tenant with at least **User Administrator** role.
-- You can use a free trial: [Try Azure for Free](https://azure.microsoft.com/free)
+
 
 ---
 
