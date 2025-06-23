@@ -56,6 +56,27 @@ Each user inherits the license based on their group membership.
 - Final license is a **union of all services** from group memberships.
 - Conflicts and assignment issues can be monitored in the **Microsoft 365 Admin Center → Billing → Licen
 
+## ✅ What Will Happen if the User Belongs to Two Different Groups?
+
+### Scenario
+
+A user is a member of two groups:
+
+- `Basic-License-Group` → Assigns **Microsoft Entra ID Basic**
+- `P1-License-Group` → Assigns **Microsoft Entra ID P1**
+
+### ✅ Expected Behavior
+
+- ✅ Only the **higher-level license (P1)** will be **applied** to the user
+- ✅ Only **one license unit (P1)** will be **consumed**
+- ✅ **Microsoft Entra automatically prioritizes** higher-tier licenses to avoid duplication
+
+### 📝 Note
+
+- The **Basic license** will be **ignored** for that user
+- No duplicate or unnecessary license consumption occurs
+- User will have access to **all features** provided by the **P1 license**
+
 ---
 
 ## 🔄 Single-User vs Group-Based Licensing
