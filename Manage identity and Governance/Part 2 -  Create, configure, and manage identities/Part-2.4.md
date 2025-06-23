@@ -139,6 +139,7 @@ A user is a member of two groups:
 
 
 ## 🪪 License Requirements
+![image](https://github.com/user-attachments/assets/1a9e599a-8351-4e91-969c-f295dc6ab38f)
 
 ### Required Subscriptions for Group Licensing
 To use **group-based licensing**, you must have one of the following:
@@ -146,7 +147,6 @@ To use **group-based licensing**, you must have one of the following:
 - Office 365 Enterprise E3 or equivalent:
   - Office 365 A3, GCC G3, GCC High E3, DoD E3
 
-![image](https://github.com/user-attachments/assets/70509a39-25ca-456a-9bd8-ee4711536888)
 
 ### Number of Licenses
 - You **must have a license for each unique user** in a licensed group.
