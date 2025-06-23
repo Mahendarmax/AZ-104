@@ -7,6 +7,7 @@ Azure management infrastructure helps you organize and control access to resourc
 ---
 
 ## 📦 Azure Resources & Resource Groups
+![image](https://github.com/user-attachments/assets/ad8fc2da-035a-456e-a10c-8f13c8775f42)
 
 - **Resource**: Basic unit in Azure (e.g., VM, Storage, Database, etc.)
 - **Resource Group**:
@@ -19,6 +20,9 @@ Azure management infrastructure helps you organize and control access to resourc
 ---
 
 ## 📃 Azure Subscriptions
+
+![image](https://github.com/user-attachments/assets/e0441337-a870-43a9-ac07-414fe53ba418)
+
 
 - **Subscription**: Unit for **billing**, **authentication**, and **access control**
 - Required to **provision resources**
@@ -44,6 +48,8 @@ Azure management infrastructure helps you organize and control access to resourc
 ---
 ---
 ### 🌲 Hierarchy Example
+![image](https://github.com/user-attachments/assets/af0345db-1818-4915-814a-c017c314d920)
+
 ![image](https://github.com/user-attachments/assets/cb16715c-0183-469c-8950-1cb48fe8a408)
 
 
