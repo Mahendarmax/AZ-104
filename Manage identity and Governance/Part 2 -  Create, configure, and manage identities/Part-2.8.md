@@ -51,3 +51,20 @@ Automatic provisioning enables seamless user and group lifecycle management betw
 > Always associate it with **automated user creation, update, and deprovisioning** across systems using **SCIM 2.0**.
 
 ---
+
+
+---
+## ❓ Exam Question
+
+**Q:** An administrator discovers users in a licensing error state due to `LicenseAssignmentAttributeConcurrencyException`.  
+What is the recommended course of action?
+
+### ✅ Correct Answer:
+> **Allow Microsoft Entra ID to retry processing the user license automatically.**
+
+## 📌 Exam Point Summary
+
+- This error occurs due to **simultaneous/conflicting license assignments** (e.g., group-based and manual).
+- ✅ **Recommended Action**: Allow **Microsoft Entra ID to automatically retry** the processing.
+- ❌ Manual intervention is **not required** unless the error persists for an extended time.
+---
