@@ -17,6 +17,44 @@ Microsoft cloud services like Microsoft 365, EMS, and Dynamics 365 require licen
 - **Automatic license assignment** when users join or leave the group.
 - Reduces manual tasks and administrative overhead.
 - Ensures license compliance and consistency across departments or roles.
+Assign different Microsoft Entra ID licenses to specific users using group-based licensing.
+
+**NOTE: you can’t assign different licenses to different users within the same group — all members of a group inherit the same set of licenses.**
+
+## 👥 Scenario
+
+- **Total users**: 5
+- **License distribution**:
+  - 2 users → **Microsoft Entra ID Basic**
+  - 3 users → **Microsoft Entra ID P1**
+
+## ✅ Solution: Use Separate Groups
+
+Create **two separate groups** and assign licenses accordingly:
+
+### 🔹 Group 1: `Basic-License-Group`
+- Add 2 users
+- Assign **Microsoft Entra ID Basic license**
+
+### 🔹 Group 2: `P1-License-Group`
+- Add 3 users
+- Assign **Microsoft Entra ID P1 license**
+
+Each user inherits the license based on their group membership.
+
+## ⚙️ Steps to Assign License to a Group
+
+1. Go to **Microsoft Entra admin center**
+2. Navigate to **Groups** → Select the target group
+3. Click **Licenses** → **Assignments**
+4. Select the appropriate license
+5. Click **Save**
+
+## ℹ️ Notes
+
+- Users can belong to **multiple groups**.
+- Final license is a **union of all services** from group memberships.
+- Conflicts and assignment issues can be monitored in the **Microsoft 365 Admin Center → Billing → Licen
 
 ---
 
