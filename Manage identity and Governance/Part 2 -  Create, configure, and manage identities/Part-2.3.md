@@ -26,6 +26,8 @@ Enable secure access for users on both personal (BYOD) and organization-owned de
 
 ![image](https://github.com/user-attachments/assets/aa95a8aa-71f2-4194-995b-5bbd1242963c)
 
+devices that are registered directly with Microsoft Entra ID (formerly Azure AD) instead of being joined to a traditional on-premises Active Directory
+
 - **Use case**: Cloud-first or cloud-only organizations
 - **Sign-in**: Microsoft Entra account (no local account)
 - **Ownership**: Organization
