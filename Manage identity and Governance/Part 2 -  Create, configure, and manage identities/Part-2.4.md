@@ -92,6 +92,52 @@ A user is a member of two groups:
 
 ---
 
+## 📦 What Is a Subscription?
+
+- A **subscription** is a product/plan you purchase from Microsoft.
+- It includes **a set number of licenses** that can be assigned to users.
+- Examples:
+  - Microsoft 365 E3 (10-user subscription)
+  - Microsoft Entra ID P1 (5-user subscription)
+
+---
+
+## 🧾 What Is a License?
+
+- A **license** is what gives an individual user access to Microsoft services (e.g., Teams, Outlook, Entra ID features).
+- You **assign licenses** from your subscription to users.
+- A license includes access to one or more service plans (e.g., Exchange, OneDrive).
+
+---
+
+## 🔄 Key Difference: Subscription vs License
+
+| Concept        | Subscription                          | License                                    |
+|----------------|----------------------------------------|--------------------------------------------|
+| What it is     | A product/plan you buy                 | The entitlement you assign to a user       |
+| Scope          | Applies to your entire organization    | Applies to specific users or devices       |
+| Contains       | Multiple licenses                      | Access to services like Teams, Outlook     |
+| Billing        | Monthly or yearly                      | Included in the subscription               |
+
+---
+
+## ✅ Do I Need to Buy Both?
+
+- **No** – When you buy a **subscription**, it already **includes licenses**.
+- You do **not** buy licenses separately.
+- You simply assign the licenses from your active subscription.
+
+---
+
+## 🔁 Can I Increase Licenses in a Subscription?
+
+- ✅ Yes, you can increase or decrease license count anytime.
+- Go to [Microsoft 365 Admin Center](https://admin.microsoft.com) → **Billing → Your products** → Update license quantity.
+- Billing updates automatically.
+
+---
+
+
 ## 🪪 License Requirements
 
 ### Required Subscriptions for Group Licensing
