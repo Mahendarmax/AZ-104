@@ -21,6 +21,8 @@ Azure's infrastructure consists of:
 ---
 
 ## 🧱 Availability Zones
+![image](https://github.com/user-attachments/assets/f3239c8c-98b3-48d4-9143-5a4241955c06)
+
 - **Physically separate datacenters** within a region
 - Each zone has **independent power, cooling, and networking**
 - Designed for **high availability** and **fault isolation**
@@ -37,6 +39,8 @@ Azure's infrastructure consists of:
 ---
 
 ## 🔁 Region Pairs
+![image](https://github.com/user-attachments/assets/73f6c436-98f5-4cc8-8348-c611fe0662e4)
+
 - Most regions are paired with another region **300+ miles apart**
 - Used for **disaster recovery** and **data replication**
 - Benefits:
