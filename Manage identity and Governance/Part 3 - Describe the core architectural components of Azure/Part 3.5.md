@@ -44,14 +44,36 @@ Azure management infrastructure helps you organize and control access to resourc
 ---
 ---
 ### 🌲 Hierarchy Example
+![image](https://github.com/user-attachments/assets/cb16715c-0183-469c-8950-1cb48fe8a408)
 
-Management Group
-│
-├── Subscription A
-│   └── Resource Group A1
-│       └── Resources
-└── Subscription B
-    └── Resource Group B1
-        └── Resources
+
+---
+
+## ✅ Key Facts
+
+- Maximum **10,000** management groups per directory  
+- Maximum **6 levels deep** (excluding root and subscriptions)  
+- Each **management group or subscription** can have **only one parent**
+
+---
+
+## 🎯 Use Case Examples
+
+- **Enforce governance**:  
+  Apply policies at the management group level (e.g., restrict VM deployments to specific regions)
+
+- **Simplify access**:  
+  Assign a single Azure RBAC role to a management group to grant access across all child subscriptions and resources
+
+---
+---
+## 📌 Summary
+
+| **Component**       | **Purpose**                                      |
+|---------------------|--------------------------------------------------|
+| `Resource`          | Actual Azure service you create/use              |
+| `Resource Group`    | Logical grouping of resources                    |
+| `Subscription`      | Unit for billing, access, and deployment         |
+| `Management Group`  | Governance across multiple subscriptions         |
 
 ---
