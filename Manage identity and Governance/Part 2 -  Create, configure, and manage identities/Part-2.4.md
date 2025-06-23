@@ -146,6 +146,8 @@ To use **group-based licensing**, you must have one of the following:
 - Office 365 Enterprise E3 or equivalent:
   - Office 365 A3, GCC G3, GCC High E3, DoD E3
 
+![image](https://github.com/user-attachments/assets/70509a39-25ca-456a-9bd8-ee4711536888)
+
 ### Number of Licenses
 - You **must have a license for each unique user** in a licensed group.
 - Users **don’t need to be assigned individually**, but the license count must match group size.
