@@ -43,6 +43,57 @@ devices that are registered directly with Microsoft Entra ID (formerly Azure AD)
 
 ![image](https://github.com/user-attachments/assets/c20dc03c-18a5-4600-abcb-a7f8c06fa17a)
 
+**Hybrid Microsoft Entra Joined** (formerly *Hybrid Azure AD Joined*) devices are joined to both:
+
+- **On-premises Active Directory (AD)**
+- **Microsoft Entra ID** (formerly *Azure AD*)
+
+---
+
+## 🔧 What Does “Hybrid Entra Join” Mean?
+
+A **Hybrid Entra Joined** device:
+
+- Is first joined to your **on-premises AD domain** (via Group Policy, domain controller, etc.)
+- Then automatically **registered with Microsoft Entra ID**
+- Enables **Single Sign-On (SSO)** and **Conditional Access** for both on-prem and cloud applications
+
+---
+
+## ✅ Benefits
+
+- 🔐 Seamless SSO to both on-prem and cloud apps
+- 🏢 Retains access to on-prem infrastructure (e.g., Group Policies, legacy systems)
+- ☁️ Enables cloud-based security and access policies
+- 📡 Automatic join via **Azure AD Connect**
+- 👩‍💼 Ideal for organizations with a **hybrid identity strategy**
+
+---
+
+## 🧩 How It Works
+
+1. The device is **domain-joined** to on-prem Active Directory.
+2. **Azure AD Connect** syncs the device metadata to Microsoft Entra ID.
+3. Device automatically becomes **Hybrid Microsoft Entra Joined**.
+4. User can securely access both **on-prem** and **cloud-based** resources.
+
+---
+
+## 📌 Comparison Table
+
+| Join Type                       | Ownership      | Sign-In Method     | Management Tools         | Best For                        |
+|---------------------------------|----------------|---------------------|---------------------------|----------------------------------|
+| Microsoft Entra Joined          | Organization   | Entra ID (cloud)    | Intune                    | Cloud-first organizations        |
+| **Hybrid Microsoft Entra Joined** | Organization   | AD Domain Account    | AD + Intune/SCCM          | Hybrid (on-prem + cloud) orgs   |
+| Microsoft Entra Registered      | Personal (BYOD)| Local account       | Intune App Protection     | BYOD/mobile users                |
+
+---
+
+## 💡 Example Use Case
+
+> A large enterprise wants to enforce Conditional Access and deploy cloud apps, but still needs on-prem access and Group Policies.  
+> **Hybrid Microsoft Entra Join** allows this **without requiring full migration** to cloud identity.
+
 
 - **Use case**: Organizations with on-prem Active Directory + cloud
 - **Sign-in**: Active Directory + Microsoft Entra ID
