@@ -10,7 +10,7 @@ This guide covers the major topics and skills measured in the **AZ-104: Microsof
 
 ---
 
-## Manage Azure Identities and Governance (20–25%)
+## Manage Azure Identities and Governance (20–25%) ( 6 Modules )
 
 ### Manage Microsoft Entra Users and Groups
 - Create users and groups
