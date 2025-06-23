@@ -1,4 +1,6 @@
 # AZ-104
+![image](https://github.com/user-attachments/assets/052fdaaf-6789-4392-9262-bd9433a7f8f5)
+
 # AZ-104 Certification Study Guide
 
 
