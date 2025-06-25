@@ -58,6 +58,7 @@ Azure's infrastructure consists of:
 
 ## 🏛️ Sovereign Regions
 Azure has **isolated sovereign regions** for compliance and legal requirements:
+![image](https://github.com/user-attachments/assets/9c7077a4-dd7f-40dc-96a8-11168449e3cc)
 
 ### Examples:
 - **US Gov Regions**: For U.S. government agencies, with screened personnel
