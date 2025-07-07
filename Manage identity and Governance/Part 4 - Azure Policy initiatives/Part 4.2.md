@@ -9,6 +9,9 @@
 
 ## 🏗️ Governance Hierarchy in Azure
 
+### ![image](https://github.com/user-attachments/assets/5a6a658d-fa50-47fc-bbaa-6a571b4cef88)
+
+
 | Scope | Description |
 |-------|-------------|
 | **Management Groups** | Organize subscriptions for enterprise-level governance; can be nested |
@@ -22,6 +25,9 @@
 
 ## ⚙️ Azure Resource Manager (ARM)
 
+![image](https://github.com/user-attachments/assets/56ecd105-1975-45c9-9981-441a658d5a7b)
+
+
 - ARM is the **control layer** for deploying and managing Azure resources.
 - Supports **template deployments**, **RBAC**, **tagging**, and **auditing**.
 - Azure Policy is integrated directly with ARM to evaluate policies at deployment time.
@@ -29,6 +35,11 @@
 ---
 
 ## 🔄 Control Plane vs Data Plane
+
+
+![image](https://github.com/user-attachments/assets/cab7a7c9-e647-414b-9c3e-3bfd11c0eb24)
+
+
 
 | Plane | Purpose |
 |-------|---------|
