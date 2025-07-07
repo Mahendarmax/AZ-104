@@ -6,6 +6,12 @@ Azure Policy helps enforce organizational standards and assess compliance across
 
 ## 📘 Key Azure Policy Resources
 
+
+![image](https://github.com/user-attachments/assets/59ba2a04-30cd-4f60-aa81-0a35b8ae7382)
+
+
+
+
 ### 📌 1. Definitions
 - Describe **conditions and effects** to apply to Azure resources.
 - Defined in **JSON**; stored at **management group** or **subscription** level.
