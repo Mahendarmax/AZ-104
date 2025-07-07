@@ -5,6 +5,7 @@
 The **Cloud Adoption Framework for Azure** is a structured guide to help organizations plan, adopt, and govern their Azure cloud usage.  
 It provides best practices and tools across key areas like strategy, planning, migration, and governance.  
 Azure Policy plays a critical role in enforcing compliance, security, and operational consistency across resources.
+
 ![image](https://github.com/user-attachments/assets/41e51ca1-8605-42d3-8688-fc9045300249)
 
 ## Steps for cloud governance
