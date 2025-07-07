@@ -57,6 +57,9 @@ Azure Policy plays a critical role in enforcing compliance, security, and operat
 4. **Identity Baseline** – Govern access and role assignments.
 5. **Deployment Acceleration** – Speed up deployments using templates and standard processes.
 
+![image](https://github.com/user-attachments/assets/0a067d39-6290-4958-b8cf-677bd2f75915)
+
+
 ---
 
 ## 🎯 Azure Policy in Cloud Governance
