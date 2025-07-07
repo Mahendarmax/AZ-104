@@ -1,5 +1,5 @@
 # Define the markdown content for Evaluation of resources through Azure Policy
-evaluation_md_content = """
+
 # ✅ Evaluation of Resources through Azure Policy
 
 ## 🎯 Evaluation Triggers
