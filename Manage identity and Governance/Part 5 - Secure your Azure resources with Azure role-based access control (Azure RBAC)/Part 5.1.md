@@ -1,5 +1,8 @@
 # 🔒 What is Azure RBAC? — Exam-Focused Notes
 
+![image](https://github.com/user-attachments/assets/8b91a011-658f-4158-808d-8d514be23136 width="500" )
+
+
 ## 📌 Core Cloud Identity & Access Concerns
 - ✅ Ensure **access is revoked** when people leave the organization.
 - ✅ Balance between **team autonomy** and **central governance**.
