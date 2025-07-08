@@ -1,6 +1,6 @@
 # 🔒 What is Azure RBAC? — Exam-Focused Notes
 
-<img src="https://github.com/user-attachments/assets/8b91a011-658f-4158-808d-8d514be23136" width="500">
+<img src="https://github.com/user-attachments/assets/8b91a011-658f-4158-808d-8d514be23136" width="700">
 
 
 
@@ -47,7 +47,7 @@ Use Azure RBAC to:
 
 ## 🧭 Access Control (IAM) in Portal
 
-<img src= "https://github.com/user-attachments/assets/e101501d-876e-4ced-ab23-4312d43519d3" width="600">
+<img src= "https://github.com/user-attachments/assets/e101501d-876e-4ced-ab23-4312d43519d3" width="800">
 
 
 - IAM = **Access Control pane** in the Azure Portal.
@@ -61,6 +61,10 @@ Use Azure RBAC to:
 ## ⚙️ How Azure RBAC Works
 
 ### 1️⃣ Security Principal (Who?)
+
+![image](https://github.com/user-attachments/assets/f97cd0af-0edf-4e69-831e-4ab10ec2bf32)
+
+
 - The **identity** you're granting access to:
   - 👤 User
   - 👥 Group
@@ -69,6 +73,10 @@ Use Azure RBAC to:
 ---
 
 ### 2️⃣ Role Definition (What?)
+
+![image](https://github.com/user-attachments/assets/eccd79ce-009f-41ce-9fbf-0a48f1489d2a)
+
+
 - Set of **permissions** granted (aka **role**).
 - Roles specify **read**, **write**, **delete**, etc.
 
@@ -85,6 +93,10 @@ Use Azure RBAC to:
 ---
 
 ### 3️⃣ Scope (Where?)
+
+![image](https://github.com/user-attachments/assets/ae44d8c8-e0bf-4ccb-88e8-460e5ac44a08)
+
+
 - The **level** at which access is applied:
   - Management Group
   - Subscription
@@ -96,6 +108,10 @@ Use Azure RBAC to:
 ---
 
 ## 🔗 Role Assignment (Who + What + Where)
+
+![image](https://github.com/user-attachments/assets/fa822940-0c9e-4d3c-abcd-9f0096b36d6d)
+
+
 - Binding of **security principal** + **role** + **scope** = Access.
 - To **grant access** → Create a role assignment.
 - To **revoke access** → Remove the assignment.
