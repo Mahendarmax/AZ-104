@@ -46,6 +46,10 @@ Use Azure RBAC to:
 ---
 
 ## 🧭 Access Control (IAM) in Portal
+
+<img src= "https://github.com/user-attachments/assets/e101501d-876e-4ced-ab23-4312d43519d3" width="600">
+
+
 - IAM = **Access Control pane** in the Azure Portal.
 - See:
   - Who has access
