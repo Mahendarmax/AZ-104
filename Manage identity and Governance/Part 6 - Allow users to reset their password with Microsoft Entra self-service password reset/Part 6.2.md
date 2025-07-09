@@ -7,7 +7,7 @@ Configure, register, and test SSPR using a non-admin user and email authenticati
 
 ## 🔹 Step 1: Create a Security Group
 
-<img src="https://github.com/user-attachments/assets/20f88ce7-2e59-43bb-ad02-960c39d34923" width="800">
+<img src="https://github.com/user-attachments/assets/20f88ce7-2e59-43bb-ad02-960c39d34923" width="600">
 
 
 
