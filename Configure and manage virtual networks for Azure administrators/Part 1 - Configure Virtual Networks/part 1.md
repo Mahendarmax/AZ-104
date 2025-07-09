@@ -3,6 +3,10 @@
 ## Overview
 This module focuses on designing and planning Azure Virtual Networks (VNets), which are foundational to Azure infrastructure deployment. It covers VNet characteristics, common scenarios, and best practices for configuration.
 
+
+![image](https://github.com/user-attachments/assets/26b5c050-960a-4ac0-ac87-f28f339f511b)
+
+
 ---
 
 ## 🔹 Key Concepts
