@@ -1,4 +1,4 @@
-# 🧪 Exercise - Set Up Self-Service Password Reset (SSPR)
+![image](https://github.com/user-attachments/assets/cd1c5df8-39ec-408b-a21d-2645182fd3da)# 🧪 Exercise - Set Up Self-Service Password Reset (SSPR)
 
 ## 🎯 Goal:
 Configure, register, and test SSPR using a non-admin user and email authentication.
@@ -39,6 +39,9 @@ Configure, register, and test SSPR using a non-admin user and email authenticati
 
 ## 🔹 Step 3: Enable SSPR for the Group
 
+![image](https://github.com/user-attachments/assets/7b930a73-2969-4bcc-9128-6f10c496d103)
+
+
 - Navigate to: `Microsoft Entra ID > Password reset > Properties`
 - Set:  
   - **Self-service password reset enabled** → `Selected`
@@ -62,6 +65,9 @@ Configure, register, and test SSPR using a non-admin user and email authenticati
 
 ## 🔹 Step 5: Register for SSPR
 
+![image](https://github.com/user-attachments/assets/04074acd-d994-4952-bb7c-d585470101fe)
+
+
 - Open private/incognito window
 - Go to: `https://aka.ms/ssprsetup`
 - Sign in as: `balas@<organization-domain>.onmicrosoft.com`
@@ -73,6 +79,9 @@ Configure, register, and test SSPR using a non-admin user and email authenticati
 ---
 
 ## 🔹 Step 6: Test SSPR
+
+<img src="https://github.com/user-attachments/assets/351aaa21-ef9d-4cd3-98a3-50e73700942b" width="600">
+"
 
 - Open a new incognito browser window
 - Go to: `https://aka.ms/sspr`
