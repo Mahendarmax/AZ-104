@@ -38,6 +38,9 @@ Add your organization’s branding to the Microsoft Entra sign-in page to ensure
 
 ## 🔹 Step 3: Test the Branding
 
+![image](https://github.com/user-attachments/assets/9e3907b4-414e-483b-ba6a-5e362ed22869)
+
+
 - Open: `https://login.microsoft.com`
 - Sign in with: `balas@<organization-domain>.onmicrosoft.com`
 - Confirm:
@@ -45,6 +48,8 @@ Add your organization’s branding to the Microsoft Entra sign-in page to ensure
   - Custom **favicon/logo**
 - Click: **Forgot my password**
   - Branding should appear on the reset page as well
+
+<img src="https://github.com/user-attachments/assets/52525745-08ac-4e62-9101-78afb0506b1f" width="650">
 
 ---
 
