@@ -100,12 +100,4 @@ Includes hands-on sandbox to practice IP planning in real Azure environments.
 
 ## 🛠 Example Use Case Diagram
 
-[Virtual Machine]
-|
-|--> 🔒 Private IP --> 🗄️ Internal Database (within VNet)
-|
-└--> 🌐 Public IP --> 🌍 Internet (external access)
-
-yaml
-Copy
-Edit
+![image](https://github.com/user-attachments/assets/86c0237e-4d70-451e-b20a-009451d92aed)
