@@ -4,7 +4,7 @@
 A **Public IP Address** in Azure allows resources like Virtual Machines and Load Balancers to communicate with the internet. Understanding its configuration and behavior is critical for exams like AZ-104, AZ-305, etc.
 
 
-<img src="https://github.com/user-attachments/assets/1466624f-e5af-41ec-a396-5605f63e7b90" width="650" height="700">
+<img src="https://github.com/user-attachments/assets/ffd9fd78-5094-4e62-8a61-de34a6cb024d" width="650" height="550">
 ---
 
 ## ⚙️ Configuration Settings
