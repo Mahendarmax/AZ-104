@@ -19,6 +19,36 @@ A **Public IP Address** in Azure allows resources like Virtual Machines and Load
 
 ---
 
+## 🆚 Key Differences Summary
+
+| Feature                     | DHCP Private IP (Azure) | Public IP - Dynamic       | Public IP - Static        |
+|-----------------------------|--------------------------|----------------------------|----------------------------|
+| Scope                       | Internal (VNet only)     | Internet-facing            | Internet-facing            |
+| Protocol Used               | DHCP                     | Azure-managed assignment   | Azure-managed reservation  |
+| Assigned By                 | Azure DHCP               | Azure IP Pool              | Azure IP Pool              |
+| IP Changes?                 | Yes (unless reserved)    | Yes (on stop/deallocate)   | No                         |
+| Created Manually?           | No (auto by subnet config) | Yes                        | Yes                        |
+| DNS/FW Compatibility        | Not applicable           | ❌ Not reliable             | ✅ Required for stable DNS |
+
+---
+
+## 📌 Exam Tips
+
+- Azure **does not use DHCP for public IP assignment**.
+- **Static Public IPs** are used when IP address **must remain constant**.
+- **Dynamic Public IPs** are suitable for **non-critical, cost-optimized scenarios**.
+- **DHCP** is only responsible for **private IPs** within a **VNet**.
+
+---
+
+## 🎯 Real-World Example
+
+| Scenario                          | Type of IP Used       |
+|----------------------------------|------------------------|
+| Internal VM communication        | DHCP Private IP (VNet) |
+| Test VM with temporary access    | Dynamic Public IP      |
+| Production web server            | Static Public IP       |
+| Azure Bastion or VPN Gateway     | Static Public IP       |
 ## 🔁 Assignment Methods
 
 ### 🌀 Dynamic
