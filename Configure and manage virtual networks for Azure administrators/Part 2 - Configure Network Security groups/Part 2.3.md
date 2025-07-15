@@ -1,11 +1,5 @@
 # 📌 Determine Network Security Group (NSG) Effective Rules
 
-> **Module:** Determine network security group effective rules  
-> **XP Earned:** 100 XP  
-> **Completion Time:** 6 minutes
-
----
-
 ## 🧠 Overview
 
 When multiple **Network Security Groups (NSGs)** are associated with both a **subnet** and **network interface (NIC)**, their rules are evaluated **independently**. The combination of both determines the **effective** rules applied to a virtual machine (VM).
@@ -35,6 +29,13 @@ Understanding the **evaluation order**, **priority handling**, and **intra-subne
 ---
 
 ## 🛠️ Key Considerations for Effective Rules
+
+
+
+<img width="927" height="454" alt="image" src="https://github.com/user-attachments/assets/d410d314-e706-48cc-9a2f-061e713cdffd" />
+
+
+
 
 ### ✅ 1. No NSG = All Traffic Allowed
 - If no NSG is associated at subnet/NIC level, **default Azure rules apply**, allowing all traffic.
