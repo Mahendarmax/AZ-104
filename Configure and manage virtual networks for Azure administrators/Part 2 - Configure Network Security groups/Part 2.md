@@ -1,10 +1,5 @@
 # 🛡️ Implement Network Security Groups (NSGs) in Azure
 
-> **Module:** Implement network security groups  
-> **XP Earned:** 100 XP  
-> **Completion Time:** 4 minutes
-
----
 
 ## 📘 Overview
 
@@ -118,4 +113,6 @@ A **Subnet** is a range of IP addresses within a Virtual Network (VNet). It help
 ---
 
 ## 📐 Typical Network Diagram
+
+<img width="317" height="335" alt="image" src="https://github.com/user-attachments/assets/383dc949-13ff-4f60-a147-6fbf61598450" />
 
