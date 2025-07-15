@@ -14,7 +14,7 @@ Each **NSG** comes with **default rules** created by Azure, but **custom rules**
 
 <img width="891" height="246" alt="image" src="https://github.com/user-attachments/assets/2aabb353-1dae-4a1d-8fab-74f41cbf3479" />
 
-
+```text
 
 | Direction | Rule Name                | Action | Purpose                                                                 |
 |-----------|--------------------------|--------|-------------------------------------------------------------------------|
@@ -27,9 +27,11 @@ Each **NSG** comes with **default rules** created by Azure, but **custom rules**
 
 > ⚠️ **Note:** Default rules **cannot be deleted** but **can be overridden** by a custom rule with a **higher priority** (lower priority number).
 
+```
 ---
 
 ## ⚙️ Custom Rule Parameters
+
 
 | Setting              | Values/Details                                                                 |
 |----------------------|---------------------------------------------------------------------------------|
