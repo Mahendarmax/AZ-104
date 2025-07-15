@@ -10,6 +10,12 @@ Each **NSG** comes with **default rules** created by Azure, but **custom rules**
 
 ## 📌 Default Security Rules (Auto-created by Azure)
 
+<img width="883" height="257" alt="image" src="https://github.com/user-attachments/assets/5cf6ec34-9934-4777-86e7-f9054735d86c" />
+
+<img width="891" height="246" alt="image" src="https://github.com/user-attachments/assets/2aabb353-1dae-4a1d-8fab-74f41cbf3479" />
+
+
+
 | Direction | Rule Name                | Action | Purpose                                                                 |
 |-----------|--------------------------|--------|-------------------------------------------------------------------------|
 | Inbound   | AllowVNetInBound         | Allow  | Allows traffic from within the same VNet                                |
