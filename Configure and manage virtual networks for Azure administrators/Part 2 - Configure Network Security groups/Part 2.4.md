@@ -12,6 +12,11 @@ Azure lets you easily **create security rules** in a **Network Security Group (N
 
 To create a rule, you must configure the following settings:
 
+<img width="368" height="334" alt="image" src="https://github.com/user-attachments/assets/70f5917c-4799-4ff3-92ef-dcd35f9a59f2" />
+
+
+
+
 | Property     | Description                                                                 |
 |--------------|-----------------------------------------------------------------------------|
 | **Source**   | Defines the **origin** of the traffic (e.g., IP range, Service Tag, ASG)    |
@@ -33,10 +38,19 @@ To create a rule, you must configure the following settings:
   - `Any`
 
 - 📡 **Service (Port + Protocol)**:
+
+<img width="244" height="203" alt="image" src="https://github.com/user-attachments/assets/4d444b13-38ef-4b21-bbbf-cad4136917a9" />
+
+
   - Can be **predefined** (RDP, SSH, HTTPS, etc.)
   - Or defined manually (e.g., TCP:8080, UDP:53)
 
 - 🔢 **Priority**:
+
+<img width="369" height="136" alt="image" src="https://github.com/user-attachments/assets/d5f3904a-e6ef-4fcb-9cdd-716270c0e541" />
+
+
+
   - **Lower number = higher priority**
   - Use priority gaps like `100`, `200`, `300` for future expansion
 
