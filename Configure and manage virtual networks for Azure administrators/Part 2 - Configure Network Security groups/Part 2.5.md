@@ -63,6 +63,9 @@ This approach:
 
 
 
+
+
+
 | Rule | Priority | Direction | Source | Destination | Port | Action | Purpose |
 |------|----------|-----------|--------|-------------|------|--------|---------|
 | Rule 1 | 100 | Inbound | Internet | `Web-ASG` | 80, 443 | Allow | Allow customer HTTP/HTTPS traffic |
