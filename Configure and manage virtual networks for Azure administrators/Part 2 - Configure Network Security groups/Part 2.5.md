@@ -23,6 +23,22 @@ Application Security Groups (ASGs) provide a way to group virtual machines (VMs)
 
 ---
 
+## 📂 Real-World Example: Grouping 5 Web Servers
+
+If you have **5 individual web servers**, you can:
+- Create an ASG called `Web-ASG`
+- Assign each server’s **NIC** to `Web-ASG`
+- Use `Web-ASG` in NSG rules (as source or destination)
+
+> ✅ Now all 5 VMs are **logically grouped**, and NSG rules apply to the group — no need to manage individual IP addresses or create per-VM rules.
+
+This approach:
+- Simplifies scaling (add/remove VMs easily)
+- Works across subnets and zones
+- Keeps your network secure and maintainable
+
+---
+
 ## 🏗️ Scenario Setup: Online Retailer Example
 
 ### 👨‍💻 Tiers:
@@ -97,5 +113,6 @@ Application Security Groups (ASGs) provide a way to group virtual machines (VMs)
     | NSG Rule 120  |
     | Deny 1433     |
     +---------------+
+
 
 ```
