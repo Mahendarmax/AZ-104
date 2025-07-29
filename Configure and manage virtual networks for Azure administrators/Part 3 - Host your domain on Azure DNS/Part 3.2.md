@@ -19,9 +19,15 @@
   - **Domain Name**
   - **Location** (defaults to Resource Group's location)
 
+<img width="1094" height="763" alt="image" src="https://github.com/user-attachments/assets/a08df29d-3b5e-439a-9700-6782237b95bf" />
+
+
 ### Step 2: Get Azure DNS Name Servers
 - After creating the DNS zone, retrieve **NS records**.
 - These will be used to delegate the domain from the registrar.
+
+<img width="1342" height="653" alt="image" src="https://github.com/user-attachments/assets/d989bbe7-fa91-432b-90fc-fc80a481cc8b" />
+
 
 ### Step 3: Domain Delegation
 - Login to your domain registrar portal.
@@ -73,6 +79,9 @@ Use the Azure portal to create a private DNS zone.
 - **Resource Group**
 - **Zone Name**: e.g., `private.wideworldimports.com`
 
+<img width="1064" height="836" alt="image" src="https://github.com/user-attachments/assets/9330d374-4643-4298-818b-45ee0e303a41" />
+
+
 ---
 
 ## 🔹 Step 2: Identify Virtual Networks
@@ -87,6 +96,13 @@ Identify the **Virtual Networks (VNets)** that contain **VMs** needing internal 
 2. Navigate to **Virtual Network Links**
 3. Click **Add**
 4. Link each **VNet** that needs DNS name resolution
+
+
+<img width="1253" height="855" alt="image" src="https://github.com/user-attachments/assets/449053b3-2f33-4b6f-8e5b-7e38d45d3a8a" />
+
+<img width="1157" height="582" alt="image" src="https://github.com/user-attachments/assets/e19494f2-2e67-405f-b7dc-f4a6da89f6ed" />
+
+
 
 ---
 
