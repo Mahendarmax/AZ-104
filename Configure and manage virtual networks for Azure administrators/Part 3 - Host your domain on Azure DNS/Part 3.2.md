@@ -43,6 +43,35 @@
 
 # 🛠️ Configure Custom DNS Records in Azure DNS
 
+# 📘 DNS Record Types: A vs AAAA vs CNAME
+
+## 🔹 A Record (Address Record)
+- Maps a domain to an **IPv4 address**
+- Example: `example.com → 192.0.2.1`
+- Used for pointing to IPv4 web servers
+
+## 🔹 AAAA Record (Quad-A Record)
+- Maps a domain to an **IPv6 address**
+- Example: `example.com → 2001:db8::1`
+- Used for IPv6-enabled clients
+
+## 🔹 CNAME Record (Canonical Name)
+- Maps a domain to **another domain name**
+- Example: `www.example.com → example.com`
+- Used for domain aliasing (subdomains only)
+- ❌ **Not allowed at the zone apex** (e.g., `example.com`)
+
+## 🔁 Summary
+
+| Record Type | Points To         | IP Version | Used For                | Zone Apex Allowed |
+|-------------|-------------------|------------|--------------------------|-------------------|
+| A           | IPv4 Address      | IPv4       | Basic web hosting        | ✅ Yes            |
+| AAAA        | IPv6 Address      | IPv6       | IPv6 support             | ✅ Yes            |
+| CNAME       | Another Domain    | N/A        | Subdomain redirection    | ❌ No             |
+
+> 📝 Use **ALIAS** or **ANAME** if you need to point the apex domain to another domain name.
+
+
 ## 🔹 A Record (IPv4 Mapping)
 
 Used to map a domain or subdomain directly to an IPv4 address.
