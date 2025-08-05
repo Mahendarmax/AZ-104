@@ -71,6 +71,10 @@
 
 > 📝 Use **ALIAS** or **ANAME** if you need to point the apex domain to another domain name.
 
+<img width="813" height="203" alt="image" src="https://github.com/user-attachments/assets/f0bcb6e2-6b64-48da-ab65-47eae52dac61" />
+
+
+
 
 ## 🔹 A Record (IPv4 Mapping)
 
