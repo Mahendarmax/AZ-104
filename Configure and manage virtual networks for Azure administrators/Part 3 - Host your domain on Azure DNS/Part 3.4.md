@@ -1,19 +1,24 @@
 ## Exercise (Sandbox): Creating Alias Records for Azure DNS
 
+## 📋 Prerequisites
+- An active **Azure subscription**.
+- Access to **Azure Cloud Shell** (Bash environment).
 
-## Why Use Alias Records?
-- **Alias records** create a dynamic link between your domain's apex (root) and an Azure resource (like a load balancer)[web:19][web:20].
-- They automatically update if the resource's IP changes, so DNS always points to the correct address[web:19].
+---
 
-## Prerequisites
-- An **Azure DNS zone** already exists for your domain[web:26].
-- A **public IP address** and **load balancer** are set up in Azure[web:26].
+## 🚀 Steps to Run
 
-## Setup Steps
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/MicrosoftDocs/mslearn-host-domain-azure-dns.git
+  ```
 
-1. **Create Test Environment (Optional)**
-   - Use the provided setup script to quickly create a virtual network, two VMs, and a load balancer in Azure.
-   - The script outputs the public IP you'll use as the alias target.
+2. **Navigate to the Directory**
+   ```bash
+   git clone https://github.com/MicrosoftDocs/mslearn-host-domain-azure-dns.git
+  ```
+
+
 
 2. **Add Alias Record in Azure DNS**
    - Go to your Azure DNS zone for your domain (e.g., wideworldimportsXXXX.com).
