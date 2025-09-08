@@ -8,7 +8,7 @@ Link a **zone apex** (e.g., `wideworldimports.com`) to Azure resources like **Lo
 
 ## 📘 What is an Apex Domain?
 
-- Also called: **Zone Apex**, **Root Apex**
+- Also called: **Zone Apex**, **Root Apex**, An apex domain is the most basic, root level of a domain name—shown without any prefixes like "www" or other subdomains. For example, in "example.com", "example.com" is the apex domain, while "www.example.com" is a subdomain.
 - It’s the highest-level domain in your DNS zone (e.g., `wideworldimports.com`)
 - Represented as `@` in DNS zone record sets
 - Automatically includes:
