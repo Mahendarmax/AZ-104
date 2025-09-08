@@ -1,4 +1,4 @@
-Exercise: Creating Alias Records for Azure DNS
+##Exercise (Sandbox): Creating Alias Records for Azure DNS
 
 
 ## Why Use Alias Records?
