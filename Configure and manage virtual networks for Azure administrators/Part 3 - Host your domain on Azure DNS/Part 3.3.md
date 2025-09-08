@@ -64,11 +64,39 @@ Alias records are special DNS records in Azure that **map a domain (even the ape
 
 ## 📌 Example Scenario
 
-You want to point `wideworldimports.com` to an Azure Load Balancer:
 
-1. Create a **Public IP resource** and associate it with your Load Balancer.
-2. In Azure DNS zone for `wideworldimports.com`, create an **Alias A record** at `@`.
-3. Set the alias target to the **Public IP resource**.
+# Pointing wideworldimports.com to Azure Load Balancer
+
+This guide explains how to point your domain **wideworldimports.com** to an Azure Load Balancer using Azure DNS.
+
+## Steps
+
+1. **Create a Public IP in Azure**
+   - In the Azure portal, make a new Public IP Address resource.
+   - Associate this Public IP with your Azure Load Balancer.
+   - This gives your Load Balancer a public-facing address (like a phone number for your site).
+
+2. **Configure DNS in Azure for wideworldimports.com**
+   - Go to your Azure DNS zone for **wideworldimports.com**.
+   - Create a new DNS record:
+     - **Type:** A (Alias)
+     - **Name:** @ (the "@" symbol stands for the root domain, i.e., wideworldimports.com without www or any subdomain)
+     - **Alias:** Yes
+     - **Alias Target:** Select the Public IP resource you created above
+
+3. **Result**
+   - When someone visits **wideworldimports.com**, DNS will direct them to your Azure Load Balancer using the Public IP.
+
+## Example
+
+| Step                | Action                                        |
+|---------------------|-----------------------------------------------|
+| Create Public IP    | Make in Azure, link to Load Balancer          |
+| DNS Alias A Record  | In Azure DNS zone, add an Alias A record @    |
+| Set Alias Target    | Point to your new Public IP Address resource  |
+
+> This setup ensures all traffic for your root domain goes directly to your Azure Load Balancer through its public IP.
+
 
 ### ✅ Result:
 - `wideworldimports.com` now routes traffic to your load balancer.
